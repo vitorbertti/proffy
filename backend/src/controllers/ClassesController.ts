@@ -1,4 +1,4 @@
-import { Request, Response, response } from 'express';
+import { Request, Response } from 'express';
 
 import db from '../database/connection';
 import convertHourToMinutes from '../utils/convertHourToMinutes';
@@ -77,7 +77,7 @@ export default class ClassesController {
 
          await trx.commit();
 
-         return res.status(201);
+         return res.status(201).send();
       } catch (err) {
          await trx.rollback();
          return res.status(400).json({
