@@ -23,3 +23,15 @@ yarn-debug.log*
 yarn-error.log*
 
 database.sqlite
+
+.expo/*
+npm-debug.*
+.expo-shared
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
